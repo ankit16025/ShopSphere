@@ -1,0 +1,309 @@
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page {
+  min-height: 80vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 45px 20px;
+
+  background: #f6f7f9;
+
+  box-sizing: border-box;
+}
+
+/* =========================
+   LOGIN BOX
+========================= */
+
+.login-box {
+  width: 100%;
+  max-width: 430px;
+
+  padding: 38px 35px;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+  border-radius: 16px;
+
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.09);
+
+  box-sizing: border-box;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.login-box h1 {
+  margin: 0 0 8px;
+
+  text-align: center;
+
+  color: #232f3e;
+
+  font-size: 29px;
+  font-weight: 800;
+}
+
+.login-box > p {
+  margin: 0 0 27px;
+
+  text-align: center;
+
+  color: #777777;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-box input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 13px 14px;
+
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+
+  outline: none;
+
+  background: #ffffff;
+  color: #333333;
+
+  font-size: 15px;
+
+  transition: all 0.25s ease;
+}
+
+.login-box input::placeholder {
+  color: #999999;
+}
+
+.login-box input:hover {
+  border-color: #bbbbbb;
+}
+
+.login-box input:focus {
+  border-color: #ff9900;
+
+  box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.12);
+}
+
+/* =========================
+   PASSWORD
+========================= */
+
+.password-wrapper {
+  position: relative;
+
+  width: 100%;
+}
+
+.password-wrapper input {
+  padding-right: 50px;
+}
+
+.password-toggle {
+  position: absolute;
+
+  right: 7px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 37px;
+  height: 37px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 6px;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 17px;
+
+  padding: 0;
+
+  transition: background-color 0.2s ease;
+}
+
+.password-toggle:hover {
+  background: #f3f3f3;
+}
+
+/* =========================
+   LOGIN / REGISTER BUTTON
+========================= */
+
+.login-box form > button {
+  margin-top: 5px;
+
+  padding: 14px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #ff9900;
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.login-box form > button:hover {
+  background: #e68900;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 5px 12px rgba(255, 153, 0, 0.2);
+}
+
+.login-box form > button:active {
+  transform: translateY(0);
+}
+
+/* =========================
+   SWITCH LOGIN / REGISTER
+========================= */
+
+.switch-text {
+  margin-top: 23px !important;
+  margin-bottom: 15px !important;
+
+  text-align: center;
+
+  color: #666666;
+
+  font-size: 14px;
+}
+
+.switch-button {
+  margin-left: 5px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #ff9900;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.switch-button:hover {
+  color: #e68900;
+  text-decoration: underline;
+}
+
+/* =========================
+   BACK HOME
+========================= */
+
+.back-home {
+  width: 100%;
+
+  padding: 11px;
+
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #555555;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.back-home:hover {
+  background: #f6f6f6;
+
+  border-color: #bbbbbb;
+
+  color: #333333;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .login-page {
+    min-height: 75vh;
+
+    padding: 30px 15px;
+  }
+
+  .login-box {
+    padding: 30px 20px;
+
+    border-radius: 14px;
+  }
+
+  .login-box h1 {
+    font-size: 25px;
+  }
+
+  .login-box > p {
+    font-size: 13px;
+
+    margin-bottom: 23px;
+  }
+
+  .login-box input {
+    padding: 12px;
+
+    font-size: 14px;
+  }
+
+  .password-wrapper input {
+    padding-right: 46px;
+  }
+
+  .login-box form > button {
+    padding: 13px;
+
+    font-size: 15px;
+  }
+
+  .switch-text,
+  .switch-button {
+    font-size: 13px;
+  }
+}

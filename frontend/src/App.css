@@ -1,0 +1,234 @@
+
+/* =========================
+   CART
+========================= */
+
+.cart-section {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 25px;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+}
+
+.cart-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.cart-item {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item h3 {
+  margin-bottom: 8px;
+}
+
+.cart-item p {
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+.cart-item button {
+  padding: 8px 14px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.cart-total {
+  text-align: right !important;
+  margin-top: 25px;
+  font-size: 24px;
+}
+
+
+/* =========================
+   ORDER SUCCESS
+========================= */
+
+.order-success {
+  width: 90%;
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 45px 35px;
+
+  text-align: center;
+
+  background-color: white;
+  border-radius: 18px;
+
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Success Icon */
+
+.success-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #168a35;
+  color: white;
+
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+/* Success Heading */
+
+.order-success h1 {
+  margin: 0 0 15px;
+
+  font-size: 30px;
+
+  color: #168a35;
+}
+
+
+/* Thank You Text */
+
+.order-success > p {
+  margin-bottom: 30px;
+
+  color: #666;
+
+  font-size: 17px;
+}
+
+
+/* Success Details */
+
+.success-details {
+  margin: 30px 0;
+
+  padding: 22px 25px;
+
+  text-align: left;
+
+  background-color: #f7f9fa;
+
+  border-radius: 10px;
+
+  border: 1px solid #eeeeee;
+}
+
+.success-details p {
+  margin: 14px 0;
+
+  font-size: 15px;
+
+  color: #444;
+}
+
+.success-details strong {
+  color: #222;
+}
+
+
+/* Continue Shopping */
+
+.order-success button {
+  padding: 13px 28px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #ff9900;
+  color: white;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.order-success button:hover {
+  background-color: #e68900;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+  .order-success {
+    width: 85%;
+
+    padding: 35px 25px;
+
+    margin: 40px auto;
+  }
+
+  .order-success h1 {
+    font-size: 26px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .order-success {
+    width: 88%;
+
+    padding: 30px 18px;
+
+    margin: 30px auto;
+  }
+
+  .success-icon {
+    width: 60px;
+    height: 60px;
+
+    font-size: 32px;
+  }
+
+  .order-success h1 {
+    font-size: 23px;
+  }
+
+  .order-success > p {
+    font-size: 15px;
+  }
+
+  .success-details {
+    padding: 18px;
+  }
+
+  .success-details p {
+    font-size: 14px;
+  }
+
+  .order-success button {
+    width: 100%;
+  }
+
+}
+
